@@ -5,7 +5,9 @@ loader.Games = {
 		["Id"] = 2809202155,
 		["Loadstring"] = "https://raw.githubusercontent.com/xenonhubs/xenon-premium-hub/main/xenon%20v2",
 		["Extra_Args"] = {
-		},
+		}
+	}
+},
 	["Metal Ball Run"] = {
 		["Id"] = 4643697430,
 		["Loadstring"] = "https://raw.githubusercontent.com/xenonhubs/xenon-premium-hub/main/xenon%20v2",
