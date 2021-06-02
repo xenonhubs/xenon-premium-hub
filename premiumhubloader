@@ -1,28 +1,27 @@
 local loader = {}
 
 loader.Games = {
-	["Your Bizarre Adventure"] = {
-		["Id"] = 2809202155,
-		["Loadstring"] = "https://raw.githubusercontent.com/xenonhubs/xenon-premium-hub/main/xenon%20v2",
-		["Extra_Args"] = {},
-	["Metal Ball Run"] = {
-		["Id"] = 4643697430,
-		["Loadstring"] = "https://raw.githubusercontent.com/xenonhubs/xenon-premium-hub/main/xenon%20v2",
-		["Extra_Args"] = {
-				}
-			}
-		}
-	}
+    ["Your Bizarre Adventure"] = {
+        ["Id"] = 2809202155,
+        ["Loadstring"] = "https://raw.githubusercontent.com/xenonhubs/xenon-premium-hub/main/xenon%20v2",
+        ["Extra_Args"] = {}
+    },
+  
+    ["Metal Ball Run"] = {
+        ["Id"] = 4643697430,
+        ["Loadstring"] = "https://raw.githubusercontent.com/xenonhubs/xenon-premium-hub/main/xenon%20v2",
+        ["Extra_Args"] = {}
+    }
 }
 
 function loader.ValidGame(id)
-	local found = {false, nil}
-	for i,v in pairs(loader.Games) do
-		if string.match(id, v.Id) then
-			found = {true, {i,v}}
-		end	
-	end
-	return found;
+    local found = {false, nil}
+    for i,v in pairs(loader.Games) do
+        if string.match(id, v.Id) then
+            found = {true, {i,v}}
+        end    
+    end
+    return found;
 end
 
 function loader.GetGame()
